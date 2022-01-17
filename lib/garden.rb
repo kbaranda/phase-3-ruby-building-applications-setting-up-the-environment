@@ -1,3 +1,4 @@
+
 class Garden
   attr_accessor :name
 
@@ -5,7 +6,7 @@ class Garden
     @name = name
   end
 
-  def plants
+  def plantslearn
     Plant.all.select do |plant|
       plant.garden == self
     end
